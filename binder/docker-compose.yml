@@ -15,17 +15,11 @@ services:
       - 8888:8888
     volumes:
       - ../:/home/repo:rw
-    # Use Host Display
-    #   - /tmp/.X11-unix:/tmp/.X11-unix:rw  # X11 socket for GUI apps
-    # environment:
-    #   - DISPLAY=${DISPLAY}  # Use host display for GUI apps
-    # GPU support
-      # - NVIDIA_DRIVER_CAPABILITIES=all
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: all
-    #           capabilities: [gpu]
+    deploy:
+          resources:
+            reservations:
+              devices:
+                - driver: nvidia
+                  count: all
+                  capabilities: [gpu]
 
