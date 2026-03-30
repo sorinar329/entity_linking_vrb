@@ -1,14 +1,14 @@
-import src.entity_linking_lab.utils.detection_concepts as detection_concepts
-import src.entity_linking_lab.utils.ontology_concepts as ontology_concepts
+import scripts.detection_concepts as detection_concepts
+import scripts.ontology_concepts as ontology_concepts
+
 from owlready2 import *
 
 # Dynamically get path to project root (assumes src is inside the root)
 this_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.abspath(os.path.join(this_dir, ".."))
-pr2_imagepth = os.path.join(project_root, "resources", "pr2_speaking.png")
+pr2_imagepth = os.path.join(project_root, "models", "images", "pr2_speaking.png")
 # Build the absolute path to the ontology
-#ontology_path = os.path.join(project_root, "resources", "owl", "meals.owl")
-ontology_path = "/home/sorin/dev/entity_linking_lab/resources/owl/meals.owl"
+ontology_path = os.path.join(project_root, "models", "ontologies", "meals.owl")
 onto = get_ontology(ontology_path).load()
 
 

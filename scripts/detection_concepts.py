@@ -23,7 +23,6 @@ def detect_objects(textprompt, image_path, threshold=0.5):
     model = AutoModelForZeroShotObjectDetection.from_pretrained(model_id).to(device)
 
     # Load the image from the path
-    print(image_path)
     image = PILImage.open(image_path)
 
     # Convert image to RGB if not already in RGB format

@@ -11,8 +11,7 @@ this_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.abspath(os.path.join(this_dir, ".."))
 
 # Build the absolute path to the ontology
-#ontology_path = os.path.join(project_root, "resources", "owl", "meals.owl")
-ontology_path = "/home/sorin/dev/entity_linking_lab/resources/owl/meals.owl"
+ontology_path = os.path.join(project_root, "models", "ontologies", "meals.owl")
 
 def load_ontology():
     onto = owlready2.get_ontology(ontology_path).load()
