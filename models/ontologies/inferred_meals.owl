@@ -1,0 +1,2828 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sorin/ontologies/2025/3/untitled-ontology-106#"
+     xml:base="http://www.semanticweb.org/sorin/ontologies/2025/3/untitled-ontology-106"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sorin/ontologies/2025/3/untitled-ontology-106"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meal_prep#hasPriorTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/meal_prep#hasPriorTask"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#requiresPriorTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/meals#requiresPriorTask">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/meal_prep#hasPriorTask"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#ellipse_shift -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/meals#ellipse_shift">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/meals#motion_parameters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#folding_rotation_shift -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/meals#folding_rotation_shift">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/meals#motion_parameters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#height_increment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/meals#height_increment">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/meals#motion_parameters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#motion_parameters -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/meals#motion_parameters"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#radius_lower_bound_absolute -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/meals#radius_lower_bound_absolute">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/meals#motion_parameters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#radius_lower_bound_relative -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/meals#radius_lower_bound_relative">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/meals#motion_parameters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#radius_upper_bound_absolute -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/meals#radius_upper_bound_absolute">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/meals#motion_parameters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#radius_upper_bound_relative -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/meals#radius_upper_bound_relative">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/meals#motion_parameters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#repetitive_folding_rotation_shift -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/meals#repetitive_folding_rotation_shift">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/meals#motion_parameters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30879 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30879">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00003064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00003064">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001057">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001178">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001260">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001649 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001649">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002385 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002385">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003280">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixtures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003415">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030111"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelEdible"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Peelable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#StemShouldBeRemoved"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003443 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003443">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001057"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#StemShouldBeRemoved"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003449 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003449">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030102"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003459 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003459">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030108"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreEdible"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreRemovable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelMustBeRemoved"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Peelable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003478 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003478">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#stone_fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003486 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030111"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreRemovable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelShouldBeRemoved"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Peelable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003520">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030108"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#StemShouldBeRemoved"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003523 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003523">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030102"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003539">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030111"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreRemovable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelShouldBeRemoved"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Peelable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003600 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003600">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030108"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreMustBeRemoved"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreRemovable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelMustBeRemoved"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Peelable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003661 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003661">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301337"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004130">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixtures"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#mixtures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004183 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004183">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030108"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelMustBeRemoved"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Peelable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004327 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004327">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004387">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030108"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelEdible"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Peelable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301036">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301073">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301304 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301304">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixtures"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#liquids"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#mixtures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301337">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001057"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelMustBeRemoved"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Peelable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301338 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301338">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301403 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301403">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001057"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301441 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301441">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301337"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301564 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301564">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301705 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301705">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301710 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301710">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030110"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreRemovable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreShouldBeRemoved"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelEdible"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Peelable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301777 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301777">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301940 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301940">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Powder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03302339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03302339">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03303225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03303225">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03306347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03306347">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03306596 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03306596">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301337"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03306597 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03306597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301337"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03307240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03307240">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03309832 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03309832">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301337"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03309927 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03309927">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030108"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelEdible"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Peelable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#StemShouldBeRemoved"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03309954 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03309954">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03310334 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03310334">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03310387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03310387">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03311146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03311146">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixtures"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03315081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03315081">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixtures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03315498 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03315498">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixtures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03315502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03315502">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#stone_fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03315552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03315552">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03316061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03316061">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03317509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03317509">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#stone_fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03420170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03420170">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixtures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0030102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0030102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001057"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Peelable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0030108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0030108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001057"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0030110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0030110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030108"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0030111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0030111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030108"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001913 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001913">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#CountingUnit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#CountingUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#ResourceUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#ResourceUnit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#ResourceUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Degree -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Degree">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Quantity -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Quantity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Second -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Second">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA-HOME.owl#KitchenKnife -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA-HOME.owl#KitchenKnife">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreRemovalTool"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Knife"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Bowl -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Bowl">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Crockery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Bread -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Bread">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Crockery -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Crockery">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Cup -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Cup">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Crockery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Cutlery -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Cutlery">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Cutting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Cutting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CuttingTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#CuttingTool -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#CuttingTool">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cutlery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Dicing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Dicing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CuttingTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Disposition -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Disposition">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#ObjectProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Feature -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Hand -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Hand">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelingTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Pan -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Pan">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Crockery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Pot -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Pot">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Crockery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Slicing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Slicing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CuttingTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Spoon -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Spoon">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cutlery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/SOMA.owl#Tool -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Tool">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Adding -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Adding">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#MixingTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Admixing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Admixing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Adding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Aggregating -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Aggregating">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Amalgamating -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Amalgamating">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#AppleCutter -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#AppleCutter">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CuttingTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Arranging -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Arranging">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PickPlaceTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#AvailableState -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#AvailableState"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Baking -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Baking">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CookCoolTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Balancing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Balancing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PickPlaceTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Beating -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Beating">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#MixingTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Blanching -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Blanching">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#LeaveInHotWater"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Blending -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Blending">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Boiling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Boiling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Brewing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Brewing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#LeaveInHotWater"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Browning -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Browning">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Baking"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Frying"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Caramelizing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Caramelizing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Frying"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Carving -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Carving">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cutting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Cascading -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Cascading">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Pouring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Changing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Changing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Arranging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Chilling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Chilling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cooling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Chopping -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Chopping">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Dicing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CircularDivingToInnerMotion -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CircularDivingToInnerMotion">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#MixingMotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CircularMotion -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CircularMotion">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#MixingMotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Closing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Closing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Shutting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Coalescing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Coalescing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Collecting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Collecting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Picking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Combining -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Combining">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Commingling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Commingling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Commixing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Commixing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CompoundMotion -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CompoundMotion">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#MixingMotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Compounding -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Compounding">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Concocting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Concocting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Conflating -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Conflating">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Consistency -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Consistency">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Container -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Container">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CookCoolAction -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CookCoolAction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CookCoolTask -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CookCoolTask">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Cooking -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Cooking">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CookCoolTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Cooling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Cooling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CookCoolTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Core -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Core">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreRemovable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PartInside"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CoreCutting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CoreCutting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreRemoving"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CoreEdible -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CoreEdible">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CoreMustBeRemoved -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CoreMustBeRemoved">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CoreRemovability -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CoreRemovability">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CoreRemovable -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CoreRemovable">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CoreRemovalTool -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CoreRemovalTool">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cutlery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CoreRemoving -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CoreRemoving">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#FoodPreparationTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CoreScraping -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CoreScraping">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreRemoving"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Scraping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CoreShouldBeRemoved -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CoreShouldBeRemoved">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Crumbling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Crumbling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Sprinkling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Cube -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Cube">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Cubing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Cubing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Dicing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Cutable -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Cutable">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CuttingAction -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CuttingAction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CuttingPosition -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CuttingPosition">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#CuttingTask -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#CuttingTask">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Defrosting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Defrosting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Heating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Disposing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Disposing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Arranging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Dividing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Dividing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Halving"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Draining -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Draining">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PouringThrough"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Dry -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Dry">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Consistency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Edibility -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Edibility">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Edible -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Edible">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Edibility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Eighth -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Eighth">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#CountingUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#ElectricMixer -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#ElectricMixer">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#ElectricTool -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#ElectricTool">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Filleting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Filleting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#FoodPreparationTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Filling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Filling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PreparationTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Flattening -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Flattening">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PreparationTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#FleshOrPulp -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#FleshOrPulp">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PartInside"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Flowing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Flowing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Pouring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Folding -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Folding">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#MixingTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#FoldingMotion -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#FoldingMotion">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#MixingMotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Food -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Food">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#FoodPart -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#FoodPart">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#FoodPreparationTask -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#FoodPreparationTask">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PreparationTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Fork -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Fork">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cutlery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Freezing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Freezing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cooling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#FruitSalad -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#FruitSalad">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Recipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Frying -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Frying">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CookCoolTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Fusing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Fusing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Gathering -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Gathering">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Picking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Grilling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Grilling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CookCoolTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Grouping -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Grouping">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#MixingTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Halve -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Halve">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#CountingUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Halving -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Halving">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CuttingTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#HalvingPosition -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#HalvingPosition">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CuttingPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Handmixer -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Handmixer">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Heating -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Heating">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CookCoolTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#HorizontalEllipticalMotion -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#HorizontalEllipticalMotion">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#MixingMotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Inedible -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Inedible">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Edibility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Inserting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Inserting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Placing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Integrating -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Integrating">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Adding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Intermixing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Intermixing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Julienning -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Julienning">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CuttingTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Kneading -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Kneading">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PreparationTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Knife -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Knife">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CuttingTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Laying -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Laying">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Placing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#LeaveInHotWater -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#LeaveInHotWater">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CookCoolTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Liquid -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Liquid">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Consistency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Liquids -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Liquids">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Melding -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Melding">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Melting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Melting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Heating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Merging -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Merging">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Microwaving -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Microwaving">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Heating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Mincing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Mincing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Dicing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Mingling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Mingling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Mixer -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Mixer">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#ElectricTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Mixing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Mixing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#MixingTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#MixingAction -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#MixingAction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#MixingMotion -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#MixingMotion">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#MixingTask -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#MixingTask">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Mixtures -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Mixtures">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Moist -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Moist">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Consistency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Motion -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Motion">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Mug -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Mug">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Crockery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#MustBeAvoided -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#MustBeAvoided">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Inedible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Nutcracker -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Nutcracker">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelingTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#ObjectProperty -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#ObjectProperty">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Opening -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Opening">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PickPlaceTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Oval -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Oval">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Overcooking -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Overcooking">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Paring -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Paring">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cutting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#ParingKnife -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#ParingKnife">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Knife"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PartInside -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PartInside">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#FoodPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PartOutside -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PartOutside">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#FoodPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PastaBowl -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PastaBowl">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Bowl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Peel -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Peel">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Peelable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#SkinOrPeel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PeelEdible -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PeelEdible">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PeelMustBeRemoved -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PeelMustBeRemoved">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PeelShouldBeRemoved -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PeelShouldBeRemoved">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Peelability -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Peelability">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Peelable -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Peelable">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Peeler -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Peeler">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PeelingTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Peeling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Peeling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#FoodPreparationTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PeelingTool -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PeelingTool">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cutlery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PickPlaceAction -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PickPlaceAction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PickPlaceTask -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PickPlaceTask">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Picking -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Picking">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PickPlaceTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Piece -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Piece">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#CountingUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Piling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Piling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Arranging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Pit -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Pit">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PartInside"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Placing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Placing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PickPlaceTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Positioning -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Positioning">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Arranging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Pouring -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Pouring">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PouringTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PouringAction -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PouringAction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PouringAngle -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PouringAngle">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PouringDuration -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PouringDuration">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PouringTask -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PouringTask">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PouringThrough -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PouringThrough">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PouringTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Powder -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Powder">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Powdery -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Powdery">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Consistency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PreparationAction -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PreparationAction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#PreparationTask -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#PreparationTask">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Putting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Putting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Placing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Quarter -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Quarter">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#CountingUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#QuarterCoreRemoving -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#QuarterCoreRemoving">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreCutting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Quartering -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Quartering">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CuttingTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Reaching -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Reaching">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Picking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Recipe -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Recipe">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Refrigerating -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Refrigerating">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cooling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Reheating -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Reheating">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Heating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Removing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Removing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PreparationTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Roasting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Roasting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Frying"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Rolling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Rolling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PreparationTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Round -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Round">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#SaladBowl -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#SaladBowl">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Bowl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Sawing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Sawing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cutting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Scraping -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Scraping">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#FoodPreparationTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Seeds -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Seeds">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PartInside"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Semicircle -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Semicircle">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Semioval -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Semioval">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Setting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Setting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Placing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Shaker -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Shaker">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Shape -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Shape">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Shell -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Shell">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PartOutside"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#ShouldBeAvoided -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#ShouldBeAvoided">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Inedible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Shutting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Shutting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PickPlaceTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Sieve -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Sieve">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Simmering -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Simmering">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Sixteenth -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Sixteenth">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#CountingUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#SkinOrPeel -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#SkinOrPeel">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PartOutside"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Slice -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Slice">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#SlicingPosition -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#SlicingPosition">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CuttingPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Slivering -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Slivering">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Slicing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Snipping -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Snipping">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Slicing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Soaking -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Soaking">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PreparationTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Spilling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Spilling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PouringTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Splashing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Splashing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Pouring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Spoon -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Spoon">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreRemovalTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Sprinkling -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Sprinkling">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PouringTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Steaming -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Steaming">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Stem -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Stem">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PartOutside"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#StemRemovable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#StemEdible -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#StemEdible">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#StemMustBeRemoved -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#StemMustBeRemoved">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#StemRemovability -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#StemRemovability">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#StemRemovable -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#StemRemovable">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#StemRemoving -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#StemRemoving">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#FoodPreparationTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#StemShouldBeRemoved -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#StemShouldBeRemoved">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#AvailableState"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Sticking -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Sticking">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Arranging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Stirring -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Stirring">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Streaming -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Streaming">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Pouring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Stripe -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Stripe">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Taking -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Taking">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Picking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Thawing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Thawing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Heating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Throwing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Throwing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PickPlaceTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Tilting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Tilting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Arranging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Toasting -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Toasting">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CookCoolTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Tossing -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Tossing">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PickPlaceTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Unifying -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Unifying">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Using -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Using">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PickPlaceTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Viscuous -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Viscuous">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Consistency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Warming -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Warming">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Heating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#WhirlstormMotion -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#WhirlstormMotion">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#MixingMotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#WhirlstormThenCircularDivingToInner -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#WhirlstormThenCircularDivingToInner">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CompoundMotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#WhirlstormThenHorizontal -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#WhirlstormThenHorizontal">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CompoundMotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Whisk -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Whisk">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#Whisking -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#Whisking">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#MixingTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#WoodenSpoon -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#WoodenSpoon">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Spoon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#cream -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#cream">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#drink -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#drink">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#grease -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#grease">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#liquids -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#liquids">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#marinade -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#marinade">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixtures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#meat -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#meat">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#mixtures -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#mixtures">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#puree -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#puree">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#smoothie -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#smoothie">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Liquids"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Mixtures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#stone_fruit -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#stone_fruit">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001057"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreMustBeRemoved"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#CoreRemovable"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Cutable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#10Seconds -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#10Seconds">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PouringDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#2Seconds -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#2Seconds">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PouringDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#45Degree -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#45Degree">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PouringAngle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/meals#90Degree -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/meals#90Degree">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#PouringAngle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/situation_awareness#BreadKnife -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/situation_awareness#BreadKnife">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/meals#Knife"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/situation_awareness#Cuttability -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/situation_awareness#Cuttability">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
