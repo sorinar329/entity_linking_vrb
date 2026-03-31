@@ -18,7 +18,6 @@ def detect_objects(textprompt, image_path, threshold=0.5):
     model_id = "IDEA-Research/grounding-dino-base"
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
-    # Load the processor and model
     processor = AutoProcessor.from_pretrained(model_id)
     model = AutoModelForZeroShotObjectDetection.from_pretrained(model_id).to(device)
 

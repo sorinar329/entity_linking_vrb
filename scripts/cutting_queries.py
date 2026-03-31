@@ -207,7 +207,7 @@ def build_motion_table(selected_food,
     curr_step += 1
 
     # Decide target
-    target = selected_food if shape == "Food" else f"{selected_food.namespace} {shape}"
+    target = selected_food.name if shape == "Food" else f"{selected_food.name} {shape}"
 
     # Cutting motions
     add_step(curr_step, "Cutting the target object at the position n time(s) by ...",
