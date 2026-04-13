@@ -211,7 +211,7 @@ document.getElementById("upload").addEventListener("change", function() {
     let formData = new FormData();
     formData.append("image", file);
 
-    fetch("/upload", {
+    fetch("upload", {
         method: "POST",
         body: formData
     })
@@ -226,7 +226,7 @@ document.getElementById("upload").addEventListener("change", function() {
 // Use sample
 // =============================
 function useSample() {
-    fetch("/use_sample")
+    fetch("use_sample")
     .then(res => res.json())
     .then(data => {
         filename = data.filename;
@@ -241,7 +241,7 @@ img.onload = function() {
     canvas.width = img.width;
     canvas.height = img.height;
 
-    fetch("/detect", {
+    fetch("detect", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ filename: filename })
@@ -304,7 +304,7 @@ canvas.onclick = function(event) {
 
     document.getElementById("spinner").style.display = "block";
 
-    fetch("/click", {
+    fetch("click", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({

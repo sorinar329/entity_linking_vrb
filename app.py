@@ -41,7 +41,7 @@ def upload():
 
     return jsonify({
         "filename": file.filename,
-        "url": url_for("static", filename="uploads/" + file.filename)
+        "url": "static/uploads/" + file.filename
     })
 
 
@@ -54,7 +54,7 @@ def use_sample():
 
     return jsonify({
         "filename": filename,
-        "url": url_for("static", filename="uploads/" + filename)
+        "url": "static/uploads/" + filename
     })
 
 
