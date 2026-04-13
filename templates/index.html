@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vision App</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Wrapper to hold both columns side-by-side */
+.page-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    align-items: flex-start;
+}
+
+/* Left side: Instructions */
+.info-panel {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    line-height: 1.6;
+}
+
+.info-panel h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.info-panel ol {
+    padding-left: 20px;
+}
+
+.info-panel li {
+    margin-bottom: 15px;
+}
+
+/* Right side: Main app container */
+#app {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Controls */
+.controls {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Image container */
+#container {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#img {
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Spinner */
+#spinner {
+    display: none;
+    font-size: 18px;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+/* Coordinates */
+#coords {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Result table */
+#result {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .page-wrapper {
+        flex-direction: column;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <div class="info-panel">
+        <h2>How it Works</h2>
+        <p>Welcome to the Vision App. This tool allows you to interactively identify and select objects within an image. Follow these steps:</p>
+        <ol>
+            <li><strong>Upload an Image:</strong> Click "Choose File" to upload your own picture, or click "Use Sample Image" to test the tool with a default picture.</li>
+            <li><strong>Automatic Detection:</strong> Once loaded, the system will process the image and draw green bounding boxes around all detected objects.</li>
+            <li><strong>Select an Object:</strong> Click anywhere on the image. The app will capture your exact coordinates.</li>
+            <li><strong>View the Results:</strong> The object you clicked will be highlighted with a red box, and detailed processing steps will appear in the table below the image.</li>
+        </ol>
+    </div>
+
+    <div id="app">
+        <h1>Interactive Object Selector</h1>
+
+        <div class="controls">
+            <input type="file" id="upload">
+            <button onclick="useSample()">Use Sample Image</button>
+        </div>
+
+        <p id="spinner">⏳ Processing...</p>
+
+        <div id="container">
+            <img id="img">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <p id="coords"></p>
+
+        <div id="result"></div>
+    </div>
+
+</div>
+
+<script>
+let filename = null;
+let boxes = [];
+
+const img = document.getElementById("img");
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+// =============================
+// Upload image
+// =============================
+document.getElementById("upload").addEventListener("change", function() {
+    let file = this.files[0];
+    let formData = new FormData();
+    formData.append("image", file);
+
+    fetch("/upload", {
+        method: "POST",
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+        filename = data.filename;
+        img.src = data.url;
+    });
+});
+
+// =============================
+// Use sample
+// =============================
+function useSample() {
+    fetch("/use_sample")
+    .then(res => res.json())
+    .then(data => {
+        filename = data.filename;
+        img.src = data.url;
+    });
+}
+
+// =============================
+// After image loads → detect boxes
+// =============================
+img.onload = function() {
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    fetch("/detect", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ filename: filename })
+    })
+    .then(res => res.json())
+    .then(data => {
+        boxes = data.boxes;
+        drawBoxes();
+    });
+};
+
+// =============================
+// Draw bounding boxes
+// =============================
+function drawBoxes(selected=null) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const scaleX = img.width / img.naturalWidth;
+    const scaleY = img.height / img.naturalHeight;
+
+    boxes.forEach(box => {
+        let [x1, y1, x2, y2] = box;
+
+        let sx = x1 * scaleX;
+        let sy = y1 * scaleY;
+        let sw = (x2 - x1) * scaleX;
+        let sh = (y2 - y1) * scaleY;
+
+        if (selected && JSON.stringify(box) === JSON.stringify(selected)) {
+            ctx.strokeStyle = "red";
+            ctx.lineWidth = 3;
+        } else {
+            ctx.strokeStyle = "green";
+            ctx.lineWidth = 1;
+        }
+
+        ctx.strokeRect(sx, sy, sw, sh);
+    });
+}
+
+// =============================
+// Click handling
+// =============================
+canvas.onclick = function(event) {
+    if (!filename) return;
+
+    const rect = canvas.getBoundingClientRect();
+
+    let x = event.clientX - rect.left;
+    let y = event.clientY - rect.top;
+
+    const scaleX = img.naturalWidth / img.width;
+    const scaleY = img.naturalHeight / img.height;
+
+    let realX = x * scaleX;
+    let realY = y * scaleY;
+
+    document.getElementById("coords").innerText =
+        "Clicked at: " + Math.round(realX) + ", " + Math.round(realY);
+
+    document.getElementById("spinner").style.display = "block";
+
+    fetch("/click", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            x: realX,
+            y: realY,
+            filename: filename
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("spinner").style.display = "none";
+
+        drawBoxes(data.selected_box);
+        showResult(data.steps);
+    });
+};
+
+// =============================
+// Show steps
+// =============================
+function showResult(steps) {
+    let div = document.getElementById("result");
+
+    if (!steps || steps.length === 0) {
+        div.innerHTML = "<p>No steps found.</p>";
+        return;
+    }
+
+    let html = "<h2>Steps</h2><table border='1'>";
+
+    // header
+    let firstRow = steps[0];
+    html += "<tr>";
+    for (let key in firstRow) {
+        html += "<th>" + key + "</th>";
+    }
+    html += "</tr>";
+
+    // rows
+    steps.forEach(row => {
+        html += "<tr>";
+        for (let key in row) {
+            html += "<td>" + row[key] + "</td>";
+        }
+        html += "</tr>";
+    });
+
+    html += "</table>";
+
+    div.innerHTML = html;
+}
+</script>
+
+</body>
+</html>
