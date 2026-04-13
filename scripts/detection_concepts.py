@@ -72,7 +72,7 @@ def detect_objects(textprompt, image_path, threshold=0.5):
 
     # Show the image with bounding boxes
     plt.figure(figsize=(10, 10))
-    plt.imshow(image)
+    #plt.imshow(image)
     plt.axis('off')
     plt.title('Image with Bounding Boxes')
     plt.show()
@@ -116,7 +116,6 @@ def run_clip_on_bboxes(img_path, bbox, prompts, show_results=False):
     best_match = text_prompts[best_match_idx]
     best_key = list(prompts.keys())[best_match_idx]
 
-    #print(f"Predicted Class: {best_key} ({best_match} for {cropped_image})")
     sorted_similarities, sorted_indices = torch.sort(similarities[0], descending=True)
     sorted_labels = [list(prompts.values())[i] for i in sorted_indices.tolist()]
     sorted_scores = sorted_similarities.tolist()

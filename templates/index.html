@@ -4,7 +4,10 @@
 <title>Vision App</title>
 
 <style>
-<style>
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f7fa;
@@ -13,12 +16,45 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
 }
 
-/* Main container */
+/* Wrapper to hold both columns side-by-side */
+.page-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    align-items: flex-start;
+}
+
+/* Left side: Instructions */
+.info-panel {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    line-height: 1.6;
+}
+
+.info-panel h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.info-panel ol {
+    padding-left: 20px;
+}
+
+.info-panel li {
+    margin-bottom: 15px;
+}
+
+/* Right side: Main app container */
 #app {
-    width: 90%;
-    max-width: 900px;
+    flex: 1;
     background: white;
     padding: 25px;
     border-radius: 12px;
@@ -28,6 +64,7 @@ body {
 
 /* Title */
 h1 {
+    margin-top: 0;
     margin-bottom: 20px;
 }
 
@@ -61,6 +98,7 @@ button:hover {
 #img {
     max-width: 100%;
     border-radius: 8px;
+    display: block;
 }
 
 canvas {
@@ -109,35 +147,53 @@ th {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .page-wrapper {
+        flex-direction: column;
+    }
+}
 </style>
 
 </head>
 
 <body>
 
-<div id="app">
+<div class="page-wrapper">
 
-    <h1>Interactive Object Selector</h1>
-
-    <div class="controls">
-        <input type="file" id="upload">
-        <button onclick="useSample()">Use Sample Image</button>
+    <div class="info-panel">
+        <h2>How it Works</h2>
+        <p>Welcome to the Vision App. This tool allows you to interactively identify and select objects within an image. Follow these steps:</p>
+        <ol>
+            <li><strong>Upload an Image:</strong> Click "Choose File" to upload your own picture, or click "Use Sample Image" to test the tool with a default picture.</li>
+            <li><strong>Automatic Detection:</strong> Once loaded, the system will process the image and draw green bounding boxes around all detected objects.</li>
+            <li><strong>Select an Object:</strong> Click anywhere on the image. The app will capture your exact coordinates.</li>
+            <li><strong>View the Results:</strong> The object you clicked will be highlighted with a red box, and detailed processing steps will appear in the table below the image.</li>
+        </ol>
     </div>
 
-    <p id="spinner">⏳ Processing...</p>
+    <div id="app">
+        <h1>Interactive Object Selector</h1>
 
-    <div id="container">
-        <img id="img">
-        <canvas id="canvas"></canvas>
+        <div class="controls">
+            <input type="file" id="upload">
+            <button onclick="useSample()">Use Sample Image</button>
+        </div>
+
+        <p id="spinner">⏳ Processing...</p>
+
+        <div id="container">
+            <img id="img">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <p id="coords"></p>
+
+        <div id="result"></div>
     </div>
-
-    <p id="coords"></p>
-
-    <div id="result"></div>
 
 </div>
-
-
 
 <script>
 let filename = null;
