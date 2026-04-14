@@ -1,5 +1,7 @@
-version: '3'
+version: '3.8'
+
 services:
+  # Your existing Jupyter environment
   binder-template:
     image: binder-template:main
     build:
@@ -9,17 +11,38 @@ services:
     tty: true
     user: root
     working_dir: /home/repo
-    # entrypoint: /home/jovyan/work/binder/entrypoint.sh
     command: jupyter lab --allow-root --NotebookApp.token='' --no-browser --ip=0.0.0.0
     ports:
-      - 8888:8888
+      - "8888:8888"
     volumes:
       - ../:/home/repo:rw
     deploy:
-          resources:
-            reservations:
-              devices:
-                - driver: nvidia
-                  count: all
-                  capabilities: [gpu]
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
 
+  # New service for your Flask app
+  vision-app:
+    image: binder-template:main # Reuses the same image built above
+    build:
+      context: ../
+      dockerfile: ./binder/Dockerfile
+    stdin_open: true
+    tty: true
+    user: root
+    working_dir: /home/repo
+    command: python app.py
+    ports:
+      - "5000:5000"
+    volumes:
+      - ../:/home/repo:rw
+    deploy:
+      resources:
+        reservations:
+          devices:
+              - driver: nvidia
+                count: all
+                capabilities: [gpu]

@@ -11,9 +11,6 @@ WORKDIR ${REPO_DIR}
 
 #============= Install extra software packages =============#
 # Install dependencies manually
-# Download Mujoco offical assets
-RUN git clone --depth=1 https://github.com/google-deepmind/mujoco_menagerie.git
-
 # Upgrade vscode-server
 RUN mamba update -y conda-forge::code-server
 
