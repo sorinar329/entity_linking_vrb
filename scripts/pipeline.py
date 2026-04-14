@@ -77,10 +77,10 @@ def get_detection_results(img_path, prompts):
     return detection_results
 
 #
-def get_clicked_obj(img_path):
+def get_clicked_obj(img_path, x, y):
     detection_results = get_detection_results(img_path, get_prompts())
     #clicked_coords = detection_concepts.show_click_coordinates(img_path)
-    clicked_coords = detection_concepts.last_click
+    clicked_coords = (x,y)
     clicked_obj = []
     for i in detection_results:
         x1, y1, x2, y2 = i.bounding_box.tolist()
@@ -106,3 +106,13 @@ def provide_explanation(clicked_obj, llm_model=None):
 
     return NLP_explainer.provide_explanation_with_image(explanation,
                                                         pr2_imagepth)
+
+def get_boxes_only(img_path):
+    results = get_bboxes(img_path)
+
+    boxes = []
+    for r in results:
+        for b in r["boxes"]:
+            boxes.append(b.tolist())
+
+    return boxes
